@@ -1,5 +1,4 @@
 # CyberVault Business Website
-=======
 This project is a simple cybersecurity business website made for the Frontend Development Module CA2 assignment.
 It shows a small company brand called **CyberVault** with client reviews, an explore page, and a query form.
 
@@ -40,7 +39,6 @@ It shows a small company brand called **CyberVault** with client reviews, an exp
 - The query form includes a message counter and urgency slider.
 
 ## About the design
-=======
 This website is a school project. The goal was to make a clean and modern business website for cybersecurity, with a focus on trust, protection, and easy navigation.
 
 ![Main Page Screenshot](image/MainPage.png)
