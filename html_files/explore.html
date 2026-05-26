@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔎Explore Us</title>
+    <link href="../main.css" rel="stylesheet">
+    <script src="../javascript.js" defer></script>
+    <!-- This code is from Bootstrap 5.3 to include Bootstrap's compiled CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- This code is from Bootstrap 5.3 to include Bootstrap's compiled JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</head>
+
+<body class="text-white">
+<!-- Navigation bar fixed at top of page-->
+<nav class="w-100 m-0 position-fixed top-0 start-0 bg-light p-0 z-3 navbar bg-light">
+    <!-- Offcanvas Trigger Button with Hamburger Icon -->
+    <!-- This is extracted from lecturer's bootstrap practice code. Then, I changed according to my code. -->
+    <button class="navbar-toggler m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Toggle navigation" id="menu" data-bs-content="Menu" data-bs-placement="bottom" data-bs-custom-class="my-popover">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <h5 class="navbar-text ms-auto px-3 py-2"><i>Securing the Future,</i><strong>One Vault at a Time</strong></h5>
+  </nav>
+<main class="custom-background flex-shrink-0">
+<!-- Offcanvas Menu -->
+<!-- These codes are referenced from Bootstrap 5.3 Offcanvas. Then, I changed according to my code. -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+  <div class="offcanvas-header position-relative">
+  <!-- CyberVault title at the top of Offcanvas-->
+  <h1 class="offcanvas-title position-absolute mt-3 top-50 start-50 translate-middle text-center" id="offcanvasNavLabel"><i>Cyber</i><strong>Vault</strong></h1>
+    <!-- Button to close Offcanvas -->
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <nav class=" justify-content-between align-items-center px-3 py-2">
+      <ul class="nav list-group flex-column">
+        <li class="nav-item list-group-item list-group-item-action shadow-sm p-3 my-1 rounded border">
+          <a class="nav-link" href="index.html"><strong>Client Reviews</strong></a>
+        </li>
+        <li class="nav-item list-group-item list-group-item-secondary shadow-sm p-3 my-1 rounded border">
+          <a class="nav-link active" href="explore.html"><strong>Explore Us</strong></a>
+        </li>
+        <li class="nav-item list-group-item list-group-item-action shadow-sm p-3 my-1 rounded border">
+          <a class="nav-link" href="queryus.html"><strong>Query Us</strong></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+<!-- This is extracted from lecturer's bootstrap practice code. Then, I changed according to my code. -->
+<div class="container p-5">
+    <div class="row mt-5 mx-0 gy-4 align-items-center">
+      
+      <!-- What is phishing? -->
+      <div class=" col-lg-6 col-md-12">
+        <!-- This video is from TECHtalk YouTube Channel-->
+         <div class=" ratio ratio-1x1  p-4 shadow-sm">
+         <iframe src="https://www.youtube.com/embed/Y7zNlEMDmI4?si=1_BLV0FKR4dkCLcb" title="YouTube video player" class="border-0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </div>
+
+      </div>
+
+      <!-- How will we protect you? -->
+      <div class="col-lg-6 col-md-12">
+        <div class="custom-opacity p-4 text-dark">
+          <p class="fw-bold fs-5 mb-3 text-center">What is Phishing? How will we protect you?</p>
+          <p class="fw-bold fs-6 mb-2">Phishing is a cyberattack where criminals send fake emails, text messages, or other communications pretending to be from a trusted source to trick people into sharing sensitive information, like passwords or bank details.</p><br>
+          <p class="fw-bold fs-6 mb-2">These attacks can harm businesses by causing data breaches, financial losses, or damage to their reputation when customer or company information is stolen. Employees may unknowingly click malicious links, leading to malware infections that disrupt operations. Phishing can also erode customer trust if their data is compromised.</p><br>
+          <p class="fw-bold fs-6 mb-2">To protect your business, we implement robust email filtering to detect and block phishing attempts. We provide employee training to recognize suspicious messages and maintain strict security protocols. Our proactive monitoring and advanced threat detection ensure your business stays safe from phishing attacks.</p>
+        </div>
+      </div>
+    </div>
+
+<!-- Cards Row -->
+ <!-- Meet our protectors -->
+  <!-- This is extracted from lecturer's bootstrap practice code. Then, I changed according to my code. -->
+    <div class="row my-3 p-3 gy-4 custom-opacity">
+      <h2 class="text-center text-dark mb-3 fw-bold">Meet Our Protectors</h2>
+      <!-- Column 1 -->
+      <div class="col-md-6 col-lg-3">
+        <!-- Card for Elena Martinez -->
+        <div class="card">
+            <div class="card-header fw-bold fs-5 text-center">
+                Elena Martinez
+            </div>
+            <!--This image is from freepik.com -->
+            <img src="../image/elenamartinez.png" class="card-img-top" alt="Elena Martinez">
+            <div class="card-body d-flex justify-content-center">
+              <button type="button" class="btn btn-lg btn btn-dark border-dark text-white custom-hover" id="elenamartinez" data-bs-toggle="popover" data-bs-title="Chief Cybersecurity Strategist" data-bs-content="Dr. Elena Martinez leads our strategic efforts to protect clients from advanced cyber threats. With over 15 years of experience in cybersecurity, she specializes in threat intelligence and risk assessment, ensuring businesses stay ahead of evolving dangers. She holds a Ph.D. in Computer Science and is a Certified Information Systems Security Professional (CISSP)." data-bs-container="body">View Profile Details</button>
+            </div>
+          </div>
+      </div>
+      <!-- Column 2 -->
+      <div class="col-md-6 col-lg-3">
+        <!-- Card for James Carter -->
+        <div class="card">
+          <div class="card-header fw-bold fs-5 text-center">
+                James Carter
+            </div>
+          <!--This image is from freepik.com -->
+          <img src="../image/jamescarter.png" class="card-img-top" alt="James Carter">
+          <div class="card-body d-flex justify-content-center">
+          <button type="button" class="btn btn-lg btn btn-dark border-dark text-white custom-hover" id="jamescarter" data-bs-toggle="popover" data-bs-title="Lead Incident Response Specialist" data-bs-content="James Carter is our expert in responding to cyber incidents, minimizing damage, and restoring security. With a background in ethical hacking and a Certified Ethical Hacker (CEH) credential, he identifies vulnerabilities before attackers can exploit them. His quick thinking protects businesses from costly breaches.">View Profile Details</button>
+        </div>
+      </div>
+      </div>
+      <!-- Column 3 -->
+      <div class="col-md-6 col-lg-3">
+        <!-- Card for Aisha Khan -->
+        <div class="card">
+          <div class="card-header fw-bold fs-5 text-center">
+                Aisha Khan
+            </div>
+          <!--This image is from freepik.com -->
+          <img src="../image/aishakhan.png" class="card-img-top" alt="Aisha Khan">
+          <div class="card-body d-flex justify-content-center">
+          <button type="button" class="btn btn-lg btn btn-dark border-dark text-white custom-hover" id="aishakhan" data-bs-toggle="popover" data-bs-title="Digital Wellness Consultant" data-bs-content="Aisha Khan focuses on helping clients maintain healthy digital habits while staying secure online. With 10 years of experience in cybersecurity training and a certification in Cybersecurity Awareness (CompTIA), he empowers employees to recognize phishing and other threats. His workshops promote both safety and well-being.">View Profile Details</button>
+        </div>
+        </div>
+        </div>
+      <!-- Column 4 -->
+      <div class="col-md-6 col-lg-3">
+        <!-- Card for Michael Nguyen -->
+<div class="card">
+          <div class="card-header fw-bold fs-5 text-center">
+                Michael Nguyen
+            </div>
+          <!--This image is from freepik.com -->
+          <img src="../image/michaelnguyen.png" class="card-img-top" alt="Michael Nguyen">
+          <div class="card-body d-flex justify-content-center">
+          <button type="button" class="btn btn-lg btn btn-dark border-dark text-white custom-hover" id="michaelnguyen" data-bs-toggle="popover" data-bs-title="Senior Threat Analyst" data-bs-content="Michael Nguyen monitors and analyzes emerging cyber threats to keep our clients safe. With expertise in malware analysis and a GIAC Security Essentials (GSEC) certification, he proactively identifies risks and implements cutting-edge defenses. His work ensures businesses operate with confidence.">View Profile Details</button>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- Our Protection Promises -->
+ <!-- This is extracted from lecturer's bootstrap practice code. Then, I changed according to my code. -->
+  <div class="row mt-5 g-2 custom-opacity">
+    <h2 class="text-center text-dark mb-3 fw-bold">Our Protection Promises</h2>
+    <!-- Uncompromising Security -->
+    <div class="col-md-12 col-lg-4 order-md-1 order-lg-1">
+      <div class=" p-4 text-dark fw-bold h-100">
+        <h3>Uncompromising Security</h3>
+        <p>We are committed to safeguarding your business with cutting-edge cybersecurity solutions. Our advanced email filtering and threat detection systems block phishing attacks, preventing sensitive data breaches. We continuously monitor for emerging threats to ensure your defenses stay robust. Our team uses encryption and secure protocols to protect your digital assets. By staying ahead of cybercriminals, we minimize risks like malware or financial loss. Your security is our top priority, and we never compromise on it. Trust CyberVault to keep your business safe and operational.</p>
+      </div>
+    </div>
+    <!-- Empowering Your Team -->
+    <div class="col-md-6 col-lg-4 order-md-2 order-lg-2">
+      <div class=" p-4 text-dark fw-bold  h-100">
+        <h3>Empowering Your Team</h3>
+        <p>We believe an informed team is your strongest defense against cyber threats. Our expert-led training programs teach employees to recognize phishing emails and other scams, reducing human error. We provide engaging workshops on digital wellness to promote healthy tech habits. Our resources empower your staff to use devices securely without compromising productivity. Regular updates ensure your team stays aware of new threats. We tailor training to your business needs, fostering a culture of vigilance. With CyberVault, your employees become active cyber defenders.</p>
+      </div>
+    </div>
+    <!-- Client-Centric Solutions -->
+    <div class="col-md-6 col-lg-4 order-md-3 order-lg-3">
+      <div class=" p-4 text-dark fw-bold  h-100">
+        <h3>Client-Centric Solutions</h3>
+        <p>Our commitment is to deliver solutions that fit your unique business needs. We assess your risks, from phishing vulnerabilities to data exposure, and design customized protection plans. Our proactive monitoring detects threats before they impact your operations. We prioritize clear communication, keeping you informed without technical jargon. Our services, like secure cloud backups and employee training, ensure both security and digital well-being. If a breach occurs, our rapid response team minimizes damage and restores trust. Your success and peace of mind drive everything we do.</p>
+      </div>
+    </div>
+    <!-- Promoting Digital Wellness -->
+    <div class="col-md-6 col-lg-6 order-md-4 order-lg-4">
+      <div class=" p-4 text-dark fw-bold h-100">
+        <h3>Promoting Digital Wellness</h3>
+        <p>We go beyond security to foster a healthy digital environment for your business. Our experts guide you in managing screen time and securing devices to reduce digital stress. We offer tools to balance productivity with well-being, protecting both your data and your team’s mental health. Our anti-phishing measures ensure safe online interactions, building customer confidence. We provide actionable tips to maintain a secure and balanced digital presence. Your business thrives when technology supports both efficiency and wellness. CyberVault is your partner in creating a safer, healthier digital world.</p>
+      </div>
+    </div>
+    <!-- Lasting Trust and Reliability -->
+    <div class="col-md-6 col-lg-6 order-md-5 order-lg-5">
+      <div class=" p-4 text-dark fw-bold  h-100">
+        <h3>Lasting Trust and Reliability</h3>
+        <p>We build lasting partnerships based on trust and dependable service. Our 24/7 support ensures you’re never alone in facing cyber threats like phishing or malware. We maintain transparency by regularly updating you on your security status. Our certified professionals, backed by credentials like CISSP and CEH, deliver reliable protection. We uphold strict ethical standards to safeguard your reputation and customer trust. Our solutions evolve with your business to provide consistent security. Choose CyberVault for a commitment you can rely on every day.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+<!-- Bootstrap classes for footer are referenced from Bootstrap 5 essential tutorials and is customized according to the design I want.-->
+ <!-- hrefs in Email and Hotline to take the user to another application are referenced from Grok AI-->
+<footer class="site-footer position-relative">
+  <div class="container footer-content">
+    <div class="row">
+        <div class="col-md-4">
+          <h2 class="h5 mb-3">Contact Us</h2>
+          <p><strong>Address:</strong> 500 Dover Road Singapore 139651</p>
+          <p><strong>Email:</strong> <a href="mailto:cybervault@singapore.com">cybervault@singapore.com</a></p>
+          <p><strong>Hotline:</strong> <a href="tel:+658001234567">+65 (800) 123-456-7</a></p>
+        </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Fixed CyberVault Logo at the bottom-right corner -->
+<!-- This is referenced from Bootstrap 5 essential training tutorials.-->
+<div class="position-fixed bottom-0 end-0 bg-light p-2"><h5><i>Cyber</i><strong>Vault</strong></h5></div>
+</body>
+</html>

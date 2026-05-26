@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛡️What Our Clients Say</title>
+    <link href="../main.css" rel="stylesheet">
+    <script src="../javascript.js" defer></script>
+    <!-- This code is from Bootstrap 5.3 to include Bootstrap's compiled CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- This code is from Bootstrap 5.3 to include Bootstrap's compiled JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</head>
+
+<body class="text-white"> 
+  <!-- Navigation bar fixed at top of page -->
+<nav class="w-100 m-0 position-fixed top-0 start-0 bg-light p-0 z-3 navbar bg-light">
+    <!-- Offcanvas Trigger Button with Hamburger Icon -->
+     <!-- This is extracted from lecturer's bootstrap practice code. Then, I changed according to my code. -->
+    <button class="navbar-toggler m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Toggle navigation" id="menu" data-bs-content="Menu" data-bs-placement="bottom" data-bs-custom-class="my-popover">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <h5 class="navbar-text ms-auto px-3 py-2"><i>Securing the Future,</i><strong>One Vault at a Time</strong></h5>
+</nav>
+<main class="custom-background flex-shrink-0 ">
+<!-- Offcanvas Menu -->
+ <!-- These codes are referenced from Bootstrap 5.3 Offcanvas. Then, I changed according to my code. -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+  <div class="offcanvas-header position-relative">
+  <!-- CyberVault title at the top of Offcanvas-->
+  <h1 class="offcanvas-title position-absolute mt-3 top-50 start-50 translate-middle text-center" id="offcanvasNavLabel"><i>Cyber</i><strong>Vault</strong></h1>
+    <!-- Button to close Offcanvas -->
+    <button type="button" class="btn-close"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <nav class=" justify-content-between align-items-center px-3 py-2">
+      <ul class="nav list-group flex-column">
+        <li class="nav-item list-group-item list-group-item-secondary shadow-sm p-3 my-1 rounded border">
+          <a class="nav-link active" href="../html_files/index.html"><strong>Client Reviews</strong></a>
+        </li>
+        <li class="nav-item list-group-item list-group-item-action shadow-sm p-3 my-1 rounded border">
+          <a class="nav-link" href="../html_files/explore.html"><strong>Explore Us</strong></a>
+        </li>
+        <li class="nav-item list-group-item list-group-item-action shadow-sm p-3 my-1 rounded border">
+          <a class="nav-link" href="../html_files/queryus.html"><strong>Query Us</strong></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- Carousel -->
+<!-- These lines of code for carousel are reference from Bootstrap 5.3. Then, I changed according to my code.-->
+<div class="container">
+<div id="cardCarousel" 
+     class="carousel slide d-block align-items-center justify-content-center position-absolute
+  top-50 start-50 translate-middle w-100 custom-opacity p-5 rounded-3"
+     data-bs-ride="carousel"
+     data-bs-interval="3000"
+     data-bs-pause="hover">
+
+  <h2 class="text-dark fw-bold text-center pt-5 mt-5">
+  Our Satisfied Clients Say
+  </h2>
+
+  
+  <div class="carousel-inner">
+    <!-- Cards in Carousel -->
+    <div class="carousel-item active">
+      <!-- These lines of code for card are referenced from Bootstrap 5 essential training tutorials.-->
+      <div class="card p-5 bg-dark text-white">
+        <!--This image is from freepik.com-->
+        <img src="../image/sarahthompson.png" class="img-fluid mx-auto d-block"
+            alt="Sara Thompson">
+        <div class="card-body">
+          <h5 class="card-title">Sarah Thompson, Small Business Owner</h5>
+          <p class="card-text">CyberVault transformed our cybersecurity with their expert training and phishing protection. Their team’s dedication ensured our data stayed secure, giving us peace of mind. We highly recommend their tailored solutions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <!-- These lines of code for card are referenced from Bootstrap 5 essential training tutorials.-->
+      <div class="card p-5 bg-dark text-white">
+        <!--This image is from freepik.com-->
+        <img src="../image/markreynolds.png" class="img-fluid mx-auto d-block" alt="Mark Reynolds">
+        <div class="card-body">
+          <h5 class="card-title">Mark Reynolds, IT Manager</h5>
+          <p class="card-text">The CyberVault team’s rapid response to a potential phishing attack saved our company from significant losses. Their proactive monitoring and clear communication made all the difference. We trust them completely with our digital security.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <!-- These lines of code for card are referenced from Bootstrap 5 essential training tutorials.-->
+      <div class="card p-5 bg-dark text-white">
+        <!--This image is from freepik.com-->
+        <img src="../image/emilychen.png" class="img-fluid mx-auto d-block" alt="Emily Chen">
+        <div class="card-body">
+          <h5 class="card-title">Emily Chen, HR Director</h5>
+          <p class="card-text">CyberVault’s digital wellness workshops empowered our employees to stay safe online. Their engaging training on recognizing cyber threats was both practical and inspiring. We’ve seen a real improvement in our team’s confidence.</p>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="carousel-item">
+      <!-- These lines of code for card are referenced from Bootstrap 5 essential training tutorials.-->
+      <div class="card p-5 bg-dark text-white">
+        <!--This image is from freepik.com-->
+        <img src="../image/davidpatel.png" class="img-fluid mx-auto d-block" alt="David Patel">
+        <div class="card-body">
+          <h5 class="card-title">David Patel, Startup Founder</h5>
+          <p class="card-text">Working with CyberVault has been a game-changer for our startup’s cybersecurity. Their customized protection plan blocked phishing attempts and kept our sensitive data secure. Their commitment to our success is unmatched.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <!-- These lines of code for card are referenced from Bootstrap 5 essential training tutorials.-->
+      <div class="card p-5 bg-dark text-white">
+        <!--This image is from freepik.com-->
+        <img src="../image/lisanguyen.png" class="img-fluid mx-auto d-block" alt="Lisa Nguyen">
+        <div class="card-body">
+          <h5 class="card-title">Lisa Nguyen, Retail Manager</h5>
+          <p class="card-text">CyberVault’s clear guidance on digital wellness helped our team balance productivity and security. Their anti-phishing measures protected our customer data, preserving our reputation. We’re grateful for their reliable support.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <!-- These lines of code for card are referenced from Bootstrap 5 essential training tutorials.-->
+      <div class="card p-5 bg-dark text-white">
+        <!--This image is from freepik.com-->
+        <img src="../image/jameslee.png" class="img-fluid mx-auto d-block" alt="James Lee">
+        <div class="card-body">
+          <h5 class="card-title">James Lee, Financial Consultant</h5>
+          <p class="card-text">The expertise of CyberVault’s Cyber Defenders gave us robust protection against cyber threats. Their tailored solutions and 24/7 monitoring ensured our client information remained safe. They’re a trusted partner in our business.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <!-- These lines of code for card are referenced from Bootstrap 5 essential training tutorials.-->
+      <div class="card p-5 bg-dark text-white">
+        <!--This image is from freepik.com-->
+        <img src="../image/rachelkim.png" class="img-fluid mx-auto d-block" alt="Rachael Kim">
+        <div class="card-body">
+          <h5 class="card-title">Rachel Kim, Non-Profit Director</h5>
+          <p class="card-text">CyberVault’s training turned our staff into confident cyber defenders. Their focus on both security and digital well-being was exactly what we needed. We couldn’t be happier with their service.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <!-- These lines of code for card are referenced from Bootstrap 5 essential training tutorials.-->
+      <div class="card p-5 bg-dark text-white">
+        <!--This image is from freepik.com-->
+        <img src="../image/michaelbrown.png" class="img-fluid mx-auto d-block" alt="Michael Brown">
+        <div class="card-body">
+          <h5 class="card-title">Michael Brown, Tech Entrepreneur</h5>
+          <p class="card-text">CyberVault’s proactive approach stopped a phishing scam before it impacted our operations. Their team’s professionalism and cutting-edge tools make them a leader in cybersecurity. We highly value their partnership.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <!-- These lines of code for card are referenced from Bootstrap 5 essential training tutorials.-->
+      <div class="card p-5 bg-dark text-white">
+        <!--This image is from freepik.com-->
+        <img src="../image/annarodriguez.png" class="img-fluid mx-auto d-block" alt="Anna Rodriguez">
+        <div class="card-body">
+          <h5 class="card-title">Anna Rodriguez, Operations Manager</h5>
+          <p class="card-text">CyberVault delivered exceptional cybersecurity solutions tailored to our needs. Their commitment to transparency and rapid response kept our business secure and our team informed. They truly live up to their Protection Promise.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Navigation buttons -->
+   <!-- These are the navigation arrow buttons for carousel-->
+  <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</main>
+
+<!-- Bootstrap classes for footer are referenced from Bootstrap 5 essential tutorials and is customized according to the design I want.-->
+ <!-- hrefs in Email and Hotline to take the user to another application are referenced from Grok AI-->
+<footer class="site-footer position-relative">
+  <div class="container footer-content">
+    <div class="row">
+        <div class="col-md-4">
+          <h2 class="h5 mb-3">Contact Us</h2>
+          <p><strong>Address:</strong> 500 Dover Road Singapore 139651</p>
+          <p><strong>Email:</strong> <a href="mailto:cybervault@singapore.com">cybervault@singapore.com</a></p>
+          <p><strong>Hotline:</strong> <a href="tel:+658001234567">+65 (800) 123-456-7</a></p>
+        </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Fixed CyberVault Logo at the bottom-right corner -->
+<!-- This is referenced from Bootstrap 5 essential training tutorials.-->
+<div class="position-fixed bottom-0 end-0 bg-light p-2"><h5><i>Cyber</i><strong>Vault</strong></h5></div>
+
+</body>
+</html>

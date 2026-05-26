@@ -1,0 +1,150 @@
+body{
+  font-size: 16px;
+  font-family: Tahoma, sans-serif;
+}
+
+.custom-background{
+  background: linear-gradient(270deg, #00000080, #55555580),
+    url(./image/background_photo.jpg); /* This image is from freepik.com */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.custom-opacity {
+  background-color: rgba(220, 220, 220, 0.75) !important;
+}
+
+.navbar-text i{
+  color: #1E3A8A;
+}
+
+.navbar-text strong{
+  color: #F97316;
+}
+
+/* Humberger Button in Nav bar always show orange base color */
+.navbar-toggler {
+  background-color: #F97316 !important;
+  border-color: #F97316 !important;
+  transition: background-color 0.1s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* On hover, change background to white */
+.navbar-toggler:hover {
+  background-color: #ffffff !important;
+}
+
+
+/* Color of link in Offcanvas when the site is active */
+.nav-link.active {
+  color: #F97316;
+}
+
+/* Normal color of linke in Offcanvas */
+.nav-link {
+  color: #1E3A8A; 
+}
+
+/* Color of link in Offcanvas when it is hovered */
+.nav-link:hover {
+  color: #F97316 !important;
+  transition: color 0.1s ease-in-out;
+}
+
+/* Adjust color of Cyber at Offcanvas header */
+.offcanvas-title i{
+  color: #1E3A8A;
+}
+
+/* Adjest color of Vault at Offcanvas header */
+.offcanvas-title strong{
+  color: #F97316;
+}
+
+/* Lines 68 to 74 are to fix the CyberVault at the header of Offcanvas */
+.position-fixed i{
+  color: #1E3A8A;
+}
+
+.position-fixed strong{
+  color: #F97316;
+}
+
+/* Lines 77 to 95 are to adjust the layout of footer */
+.site-footer {
+      background-color: #111827;
+      color: #ffffff;
+      padding: 3rem 0 1.5rem;
+}
+
+.site-footer a {
+      color: #d3d3d3;
+      text-decoration: none;
+}
+
+.site-footer a:hover {
+      color: #F97316;
+}
+
+.footer-content {
+       z-index: 1; /* Above the background */
+      padding: 1rem;
+}
+
+/* Entire popover box */
+.popover {
+  background-color: #263238 !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+}
+
+/* Header (from data-bs-title) */
+.popover-header {
+  background-color: #F97316 !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+  border-bottom: none !important;
+}
+
+/* Body (from data-bs-content) */
+.popover-body {
+  color: #ffffff !important;
+}
+
+/* This is to change the color of urgency level range in Query Form*/
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #37474F; 
+}
+
+/*This is to change the button when it is hovered*/
+.custom-hover:hover{
+    background-color: white !important;
+    color: #3b3b4f !important;
+}
+
+.card img{
+    max-width: 300px;
+    height: auto;
+}
+
+#cardCarousel h2{
+    font-size: 2rem;
+}
+
+/*Lines 139 to 145 are to change the text color in modal body.*/
+.modal-body strong{
+  color:#F97316;
+}
+
+.modal-body em{
+  color: #e30022;
+}
+
+
+
+
+   

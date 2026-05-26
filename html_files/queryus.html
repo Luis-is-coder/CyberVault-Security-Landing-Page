@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💬 Quary Us</title>
+    <link href="../main.css" rel="stylesheet">
+    <script src="../javascript.js" defer></script>
+    <!-- This code is from Bootstrap 5.3 to include Bootstrap's compiled CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- This code is from Bootstrap 5.3 to include Bootstrap's compiled JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</head>
+
+<body class="text-white">
+<!-- Navigation bar fixed at top of page-->
+<nav class="w-100 m-0 position-fixed top-0 start-0 bg-light p-0 z-3 navbar bg-light">
+    <!-- Offcanvas Trigger Button with Hamburger Icon -->
+    <!-- This is extracted from lecturer's bootstrap practice code. Then, I changed according to my code. -->
+    <button class="navbar-toggler m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Toggle navigation" id="menu" data-bs-content="Menu" data-bs-placement="bottom" data-bs-custom-class="my-popover">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <h5 class="navbar-text ms-auto px-3 py-2"><i>Securing the Future,</i><strong>One Vault at a Time</strong></h5>
+  </nav>
+<main class="custom-background flex-shrink-0">
+<!-- Offcanvas Menu -->
+<!-- These codes are referenced from Bootstrap 5.3 Offcanvas. Then, I changed according to my code. -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+  <div class="offcanvas-header position-relative">
+    <!-- CyberVault title at the top of Offcanvas-->
+  <h1 class="offcanvas-title position-absolute mt-3 top-50 start-50 translate-middle text-center" id="offcanvasNavLabel"><i>Cyber</i><strong>Vault</strong></h1>
+    <!-- Button to close Offcanvas -->
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <nav class=" justify-content-between align-items-center px-3 py-2">
+      <ul class="nav list-group flex-column">
+        <li class="nav-item list-group-item list-group-item-action shadow-sm p-3 my-1 rounded border">
+          <a class="nav-link" href="index.html"><strong>Client Reviews</strong></a>
+        </li>
+        <li class="nav-item list-group-item list-group-item-action shadow-sm p-3 my-1 rounded border">
+          <a class="nav-link" href="explore.html"><strong>Explore Us</strong></a>
+        </li>
+        <li class="nav-item list-group-item list-group-item-secondary shadow-sm p-3 my-1 rounded border">
+          <a class="nav-link active" href="queryus.html"><strong>Query Us</strong></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- Inquiry Form -->
+ <!-- These codes are referenced from take-home practical, and I changed accordingly. -->
+ <div class="container p-5">
+   <h1 class="text-center my-1 pt-5 mx-auto">Customer Query Form</h1>
+   <p class="text-center my-2 mx-auto">Secure Your Concerns—We are Listening</p>
+    <div class="row">
+      <div class="col-md-6 mx-auto my-5">
+      <form class=" text-dark justify-content-center mx-auto rounded p-4 custom-opacity" id="queryForm">
+              <!-- Full Name -->
+                <div class="form-group mb-3">
+                      <label for="fullName" class="form-label fw-bold">Full Name</label>
+                      <input type="text" name="fullName" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                </div>
+              <!-- Email -->
+                <div class="form-group mb-3">
+                      <label for="email" class="form-label fw-bold">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <!-- Phone Number -->
+                  <div class="form-group mb-3">
+                      <label for="phonenumber" class="form-label fw-bold">Phone Number</label>
+                      <input type="tel" class="form-control" id="phonenumber" placeholder="Enter your phone number" required>
+                      <small class="text-dark">
+                          Please add the '+' and country code for secure contact.
+                      </small>
+                  </div>
+                  <!-- query Type Dropdown -->
+                  <div class="form-group mb-3">
+                      <label for="query" class="form-label fw-bold">Query Type</label>
+                        <select class="form-control custom-select" id="query" required>
+                        <option value="" disabled selected>Select your query type</option>
+                        <option value="hacking">Suspected hack or unauthorized access</option>
+                        <option value="threat_scan">System scan for threats or malware</option>
+                        <option value="security_advice">Advice on improving cybersecurity</option>
+                        <option value="site_testing">Website security testing request</option>
+                        <option value="data_recovery">File recovery assistance</option>
+                        <option value="compliance">Help with data protection compliance</option>
+                        <option value="managed_security">Managed security service inquiry</option>
+                        <option value="staff_training">Cybersecurity training request</option>
+                        <option value="billing">Billing or subscription question
+                        </option>
+                        <option value="quote/demo">Quote or product demo request</option>
+                        </select>
+                  </div>
+                  <!-- Contact Radio Buttons -->
+                  <div class="form-group mb-3">
+                      <label class="form-label d-block fw-bold">Preferred Contact Method</label>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="contact" id="e-mail" value="e-mail" checked>
+                  <label class="form-check-label" for="e-mail">Email</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="contact" id="phone" value="phone">
+                       <label class="form-check-label" for="phone">Phone</label>
+                  </div>
+                  </div>
+                <!--Text Area for customer's brief experience-->
+                <div class="form-group mb-3">
+                    <label for="message" class="form-label fw-bold">Briefly Describe Your Concern</label>
+                    <textarea id="message" name="message" class="form-control" rows="4" maxlength="500" required aria-required="true" aria-describedby="message-error message-counter" placeholder="E.g. I'm having trouble accessing my account since yesterday..."></textarea>
+                    <div id="message-error" class="invalid-feedback">Message must be 10–500 characters long.</div>
+                    <div id="message-counter" class="form-text text-end">0/500 characters</div>
+                </div>
+                <!-- Range Input -->
+                 <!-- This range input bar is referenced from Bootstrap 5.3. Then, I changed accordingly-->
+                <div class="form-group d-flex flex-column align-items-center mb-3">
+                    <label for="urgency" class="text-dark fw-bold" >Urgency Level</label>
+                    <input type="range" class="form-range custom-range w-100" id="urgency" name="urgency" min="1" max="10" value="5" aria-describedby="urgency-value">
+                    <div id="urgency-value" class="range-value text-primary">Urgency: 5</div>
+                </div>
+                  <!-- Submit Button -->
+                  <div class="form-group text-center">
+                  <button type="submit" class="btn btn-dark border-white text-white custom-hover" >Submit Query</button>
+
+                  <!-- Modal -->
+                   <!-- This modal is referenced from Bootstrap 5.3. Then, I changed accordingly -->
+                    <div class="modal fade" id="queryModal" tabindex="-1" aria-labelledby="queryModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h3 class="modal-title fw-bold" id="queryModalLabel">Query Received</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p class="fw-bold">Thanks for getting in touch.</p>
+                            <p>We've successfully received your message and will respond within<em class="fw-bold"> 7 business days</em> based on your urgency level.</p>
+                            <p>In the meantime, feel free to reach out to us directly at <strong>cybervault@singapore.com</strong> (or) call our hot-line: <strong>+65 (800) 123-456-7</strong>.</p> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </form>
+          </div>
+    </div>
+</div>
+
+</main>
+
+<!-- Bootstrap classes for footer are referenced from Bootstrap 5 essential tutorials and is customized according to the design I want.-->
+ <!-- hrefs in Email and Hotline to take the user to another application are referenced from Grok AI-->
+<footer class="site-footer position-relative ">
+  <div class="container footer-content">
+    <div class="row">
+        <div class="col-md-4">
+          <h2 class="h5 mb-3">Contact Us</h2>
+          <p><strong>Address:</strong> 500 Dover Road Singapore 139651</p>
+          <p><strong>Email:</strong> <a href="mailto:cybervault@singapore.com">cybervault@singapore.com</a></p>
+          <p><strong>Hotline:</strong> <a href="tel:+658001234567">+65 (800) 123-456-7</a></p>
+        </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Fixed CyberVault Logo at the bottom-right corner -->
+<!-- This is referenced from Bootstrap 5 essential training tutorials.-->
+<div class="position-fixed bottom-0 end-0 bg-light p-2"><h5><i>Cyber</i><strong>Vault</strong></h5></div>
+
+</body>
+</html>
